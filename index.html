@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Referral Message Generator</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Referral Message Generator</h1>
+      <form>
+        <label for="link">Link:</label>
+        <input type="text" id="link" name="link" required />
+        <label for="jobs">Openings</label>
+        <input type="text" id="jobs" name="jobs" required />
+        <label for="member-id">Reference Member ID:</label>
+        <input type="text" id="member-id" name="member-id" required />
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+        <label for="company-name">Company Name:</label>
+        <input type="text" id="company-name" name="company-name" required />
+        <button type="button" onclick="generateMessage()">
+          Generate Message
+        </button>
+      </form>
+      <div class="message">
+        <h2>Referral Message</h2>
+        <p id="message">
+          Hello<br />
+
+          I hope this message finds you well. I wanted to reach out to you
+          because I recently learned about a great job opportunity at
+          <span id="company-name-highlight"></span> that I think would be a
+          perfect fit for you.
+          <br />
+          Here is the link to the job posting:
+          <a href="#" id="link-message-2"></a> <br />
+          The openings are <span id="open"></span> and I think your skills and
+          experience would be a great match for the role. If you decide to
+          apply, please make sure to include my ID
+          <span id="member-id-message"></span> in your application so that I can
+          receive credit for the referral.
+          <br />
+          I highly recommend <span id="company-name-highlight-2"></span> as a
+          great place to work. The company culture is fantastic and there are
+          many opportunities for growth and development. If you have any
+          questions about the company or the position, please don't hesitate to
+          reach out to me.
+          <br />
+          Best regards,
+          <br />
+          <span id="my-name"></span>
+        </p>
+        <button class="copy" onclick="copyMessage()">Copy to Clipboard</button>
+      </div>
+    </div>
+    <script src="js/index.js"></script>
+  </body>
+</html>

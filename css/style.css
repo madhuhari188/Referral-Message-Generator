@@ -1,0 +1,70 @@
+.container {
+  background: linear-gradient(to bottom, #ffffff, #f2f2f2);
+}
+form input[type="text"] {
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 10px;
+}
+form button[type="button"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button[type="button"]:hover {
+  background-color: #3e8e41;
+}
+.message {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.message h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.message p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.message a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.message a:hover {
+  text-decoration: underline;
+}
+
+.message button.copy {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.message button.copy:hover {
+  background-color: #3e8e41;
+}
+
+.message p span {
+  border-radius: 5px;
+  padding: 2px 5px;
+  font-weight: bold;
+}
